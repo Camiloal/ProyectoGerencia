@@ -5,7 +5,7 @@
  */
 package com.mycompany.interfaces;
 
-import com.mycompany.entity.producto;
+import com.mycompany.entity.Producto;
 import java.util.List;
 import javax.ejb.Local;
 
@@ -16,17 +16,17 @@ import javax.ejb.Local;
 @Local
 public interface productoFacadeLocal {
 
-    void create(producto producto);
+    void create(Producto producto);
 
-    void edit(producto producto);
+    void edit(Producto producto);
 
-    void remove(producto producto);
+    void remove(Producto producto);
 
-    producto find(Object id);
+    Producto find(Object id);
 
-    List<producto> findAll();
+    List<Producto> findAll();
 
-    List<producto> findRange(int[] range);
+    List<Producto> findRange(int[] range);
 
     int count();
     

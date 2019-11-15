@@ -5,7 +5,7 @@
  */
 package com.mycompany.interfaces;
 
-import com.mycompany.entity.proveedor;
+import com.mycompany.entity.Proveedor;
 import java.util.List;
 import javax.ejb.Local;
 
@@ -16,17 +16,17 @@ import javax.ejb.Local;
 @Local
 public interface proveedorFacadeLocal {
 
-    void create(proveedor proveedor);
+    void create(Proveedor proveedor);
 
-    void edit(proveedor proveedor);
+    void edit(Proveedor proveedor);
 
-    void remove(proveedor proveedor);
+    void remove(Proveedor proveedor);
 
-    proveedor find(Object id);
+    Proveedor find(Object id);
 
-    List<proveedor> findAll();
+    List<Proveedor> findAll();
 
-    List<proveedor> findRange(int[] range);
+    List<Proveedor> findRange(int[] range);
 
     int count();
     

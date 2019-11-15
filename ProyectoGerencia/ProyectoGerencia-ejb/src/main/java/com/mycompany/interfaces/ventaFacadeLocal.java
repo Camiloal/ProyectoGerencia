@@ -5,7 +5,7 @@
  */
 package com.mycompany.interfaces;
 
-import com.mycompany.entity.venta;
+import com.mycompany.entity.Venta;
 import java.util.List;
 import javax.ejb.Local;
 
@@ -16,17 +16,17 @@ import javax.ejb.Local;
 @Local
 public interface ventaFacadeLocal {
 
-    void create(venta venta);
+    void create(Venta venta);
 
-    void edit(venta venta);
+    void edit(Venta venta);
 
-    void remove(venta venta);
+    void remove(Venta venta);
 
-    venta find(Object id);
+    Venta find(Object id);
 
-    List<venta> findAll();
+    List<Venta> findAll();
 
-    List<venta> findRange(int[] range);
+    List<Venta> findRange(int[] range);
 
     int count();
     

@@ -5,7 +5,7 @@
  */
 package com.mycompany.interfaces;
 
-import com.mycompany.entity.pedido;
+import com.mycompany.entity.Pedido;
 import java.util.List;
 import javax.ejb.Local;
 
@@ -16,17 +16,17 @@ import javax.ejb.Local;
 @Local
 public interface pedidoFacadeLocal {
 
-    void create(pedido pedido);
+    void create(Pedido pedido);
 
-    void edit(pedido pedido);
+    void edit(Pedido pedido);
 
-    void remove(pedido pedido);
+    void remove(Pedido pedido);
 
-    pedido find(Object id);
+    Pedido find(Object id);
 
-    List<pedido> findAll();
+    List<Pedido> findAll();
 
-    List<pedido> findRange(int[] range);
+    List<Pedido> findRange(int[] range);
 
     int count();
     

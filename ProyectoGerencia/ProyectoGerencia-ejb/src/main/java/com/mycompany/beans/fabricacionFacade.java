@@ -6,7 +6,7 @@
 package com.mycompany.beans;
 
 import com.mycompany.interfaces.fabricacionFacadeLocal;
-import com.mycompany.entity.fabricacion;
+import com.mycompany.entity.Fabricacion;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -16,7 +16,7 @@ import javax.persistence.PersistenceContext;
  * @author CamiloAlvarez
  */
 @Stateless
-public class fabricacionFacade extends AbstractFacade<fabricacion> implements fabricacionFacadeLocal {
+public class fabricacionFacade extends AbstractFacade<Fabricacion> implements fabricacionFacadeLocal {
     @PersistenceContext(unitName = "percistence")
     private EntityManager em;
 
@@ -26,7 +26,7 @@ public class fabricacionFacade extends AbstractFacade<fabricacion> implements fa
     }
 
     public fabricacionFacade() {
-        super(fabricacion.class);
+        super(Fabricacion.class);
     }
     
 }

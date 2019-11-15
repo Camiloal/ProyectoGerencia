@@ -6,7 +6,7 @@
 package com.mycompany.beans;
 
 import com.mycompany.interfaces.pedidoFacadeLocal;
-import com.mycompany.entity.pedido;
+import com.mycompany.entity.Pedido;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -16,7 +16,7 @@ import javax.persistence.PersistenceContext;
  * @author CamiloAlvarez
  */
 @Stateless
-public class pedidoFacade extends AbstractFacade<pedido> implements pedidoFacadeLocal {
+public class pedidoFacade extends AbstractFacade<Pedido> implements pedidoFacadeLocal {
     @PersistenceContext(unitName = "percistence")
     private EntityManager em;
 
@@ -26,7 +26,7 @@ public class pedidoFacade extends AbstractFacade<pedido> implements pedidoFacade
     }
 
     public pedidoFacade() {
-        super(pedido.class);
+        super(Pedido.class);
     }
     
 }
